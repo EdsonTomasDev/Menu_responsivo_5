@@ -1,0 +1,21 @@
+*{
+margin: 0;
+}
+
+#home {
+    height: 92vh;
+    width: 100vw;
+    background: url('../image/background.jpg') no-repeat center center;
+    background-size: cover;
+}
+.menu {
+    height: 8vh;
+    width: 100vw;
+    background: #000;
+}
+
+.logo a  {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
