@@ -1,5 +1,6 @@
 *{
 margin: 0;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 #home {
@@ -7,15 +8,49 @@ margin: 0;
     width: 100vw;
     background: url('../image/background.jpg') no-repeat center center;
     background-size: cover;
+    color: #fff;
 }
 .menu {
     height: 8vh;
     width: 100vw;
     background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu_barras div{
+    height: 3px;
+    width: 32px;
+    margin: 8px;
+    background: #fff;
+}
+.menu_barras:hover{
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .logo a  {
     text-decoration: none;
     list-style: none;
     color: #fff;
+    font-size: 28px;
+}
+
+.menu_lista {
+ position: absolute;
+ top: 8vh;
+ background: #000;
+ height: 92vh;
+ width: 50vw;
+ right: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.menu_lista--link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
 }
