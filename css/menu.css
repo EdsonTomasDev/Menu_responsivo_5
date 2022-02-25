@@ -77,3 +77,16 @@ body {
 .menu_lista-ativa {
     transform: translateX(0);
 }
+
+@media(min-width: 765px){
+    body {
+        background: red;
+        color: red;
+    }
+
+    .menu_barras{
+        display: none;
+    }
+
+
+}
