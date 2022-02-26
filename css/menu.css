@@ -18,6 +18,11 @@ font-family: Arial, Helvetica, sans-serif;
     justify-content: space-around;
     align-items: center;
 }
+
+.menu_barras {
+    position: absolute;
+    right: 10px;
+}
 .menu_barras div{
     height: 3px;
     width: 32px;
@@ -28,7 +33,10 @@ font-family: Arial, Helvetica, sans-serif;
     opacity: 0.7;
     cursor: pointer;
 }
-
+.logo {
+    position: absolute;
+    left: 20px;
+}
 .logo a  {
     text-decoration: none;
     list-style: none;
@@ -78,15 +86,31 @@ body {
     transform: translateX(0);
 }
 
-@media(min-width: 765px){
-    body {
-        background: red;
-        color: red;
-    }
+.conteudo {
+    width: 85%;
+    
+    margin: 0 auto;
+    padding-top: 20px;
+}
 
+@media(min-width: 765px){
+   
     .menu_barras{
         display: none;
     }
 
+    .menu_lista{
+        transform: translateX(0);
+        position: unset;
+        
+        height: 8vh;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .logo{
+        position: unset;
+    }
 
 }
