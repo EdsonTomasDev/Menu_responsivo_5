@@ -24,11 +24,14 @@ font-family: Arial, Helvetica, sans-serif;
     right: 10px;
 }
 .menu_barras div{
-    height: 3px;
+    height: 2px;
     width: 32px;
     margin: 8px;
     background: #fff;
 }
+
+
+
 .menu_barras:hover{
     opacity: 0.7;
     cursor: pointer;
@@ -91,6 +94,30 @@ body {
     
     margin: 0 auto;
     padding-top: 20px;
+}
+
+.menu_barras--linha1, .menu_barras--linha2, .menu_barras--linha3 {
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile_menu_line1 {
+    
+    transform: rotate(-45deg) translate(-8px, 8px);
+   
+   
+}
+
+.mobile_menu_line2 {
+   
+    opacity: 0;
+  
+   
+}
+
+.mobile_menu_line3 {
+   
+    transform: rotate(45deg) translate(-5px, -7px);
+   
 }
 
 @media(min-width: 765px){
